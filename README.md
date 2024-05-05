@@ -10,3 +10,8 @@ When the server is initiated using cargo run --bin server and each client is sta
 ![alt text](image-4.png)
 ![alt text](image-5.png)
 When both the client and server use the same port, the application functions smoothly. However, changing the port on just the client side leads to a connection error because the client attempts to connect to a port that isn't open, causing the program to crash when cargo run --bin client is executed.
+
+
+![alt text](image-6.png)
+![alt text](image-7.png)
+I modified the way messages are broadcast to include both the sender's IP address and port along with the text message. Previously, the broadcast only contained the text, without identifying the sender's details
